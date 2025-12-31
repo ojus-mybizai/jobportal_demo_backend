@@ -16,7 +16,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base import Base, GUID, TimestampMixin
-from app.models.master import MasterJobCategory, MasterLocation, ExperienceLevel, JobType, Gender
+from app.models.master import MasterJobCategory, MasterLocation, ExperienceLevel
 
 
 class JobStatus(str, enum.Enum):
