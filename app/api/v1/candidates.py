@@ -15,10 +15,10 @@ from app.models.candidate import (
     CandidateEmploymentStatus,
     CandidatePayment,
     CandidateStatus,
-    ExperienceLevel,
     Gender,
     CourseStructureFee,
 )
+from app.models.master import ExperienceLevel
 from app.models.interview import Interview
 from app.models.job import Job, JobStatus
 from app.models.company import Company
