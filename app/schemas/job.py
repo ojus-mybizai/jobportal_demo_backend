@@ -4,7 +4,8 @@ from uuid import UUID
 
 from pydantic import BaseModel, Field, computed_field
 
-from app.models.job import JobStatus, JobType, Gender, ExperienceLevel
+from app.models.job import JobStatus, JobType, Gender
+from app.models.master import ExperienceLevel
 
 
 class RelatedJobItem(BaseModel):

@@ -4,7 +4,8 @@ from uuid import UUID
 
 from pydantic import BaseModel, EmailStr, Field, computed_field, field_validator, model_validator
 
-from app.models.candidate import CandidateEmploymentStatus, CandidateStatus, Gender, ExperienceLevel
+from app.models.candidate import CandidateEmploymentStatus, CandidateStatus, Gender
+from app.models.master import ExperienceLevel
 from app.schemas.candidate_payment import CandidatePaymentCreate, CandidatePaymentRead
 
 

@@ -16,7 +16,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.models.base import Base, GUID, TimestampMixin
-from app.models.master import MasterJobCategory, MasterLocation
+from app.models.master import MasterJobCategory, MasterLocation, ExperienceLevel, JobType, Gender
 
 
 class JobStatus(str, enum.Enum):
@@ -35,12 +35,6 @@ class Gender(str, enum.Enum):
     OTHER = "OTHER"
     BOTH = "BOTH"
 
-class ExperienceLevel(str, enum.Enum):
-    FRESHER = "FRESHER"
-    ZERO_ONE = "0_1_YEARS"
-    ONE_THREE = "1_3_YEARS"
-    THREE_FIVE = "3_5_YEARS"
-    FIVE_PLUS = "5_PLUS_YEARS"
 
 class Job(TimestampMixin, Base):
     __tablename__ = "jobs"

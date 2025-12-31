@@ -1,4 +1,5 @@
 import uuid
+import enum
 
 from sqlalchemy import Boolean, String, Text
 from sqlalchemy.orm import Mapped, mapped_column
@@ -9,6 +10,14 @@ from app.models.base import Base, GUID, TimestampMixin
 class MasterMixin(TimestampMixin):
     id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=uuid.uuid4)
     name: Mapped[str] = mapped_column(String(255), nullable=False, index=True)
+
+
+class ExperienceLevel(str, enum.Enum):
+    FRESHER = "FRESHER"
+    ZERO_ONE = "0_1_YEARS"
+    ONE_THREE = "1_3_YEARS"
+    THREE_FIVE = "3_5_YEARS"
+    FIVE_PLUS = "5_PLUS_YEARS"
     
 
 
