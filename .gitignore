@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Virtual environments
+.env
+.env.*
+env/
+venv/
+.venv/
+
+# Logs
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Testing / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Alembic
+# (keep migrations tracked; ignore only caches if any)
+
+# Local media / uploads (adjust if you want to version these)
+media/
+
+# Node (if any frontend assets are generated here)
+node_modules/
